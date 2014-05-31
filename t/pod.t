@@ -8,8 +8,8 @@ use Test::More;
 my $min_tp = 1.22;
 eval "use Test::Pod $min_tp";
 
-#plan skip_all => "Test::Pod $min_tp required for testing POD" if $@;
+plan skip_all => "Test::Pod $min_tp required for testing POD" if $@;
 
-plan skip_all => "Temporarily Disabling pod test";
+#plan skip_all => "Temporarily Disabling pod test";
 
-#all_pod_files_ok();
+all_pod_files_ok();
