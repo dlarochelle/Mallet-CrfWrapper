@@ -18,6 +18,9 @@ WriteMakefile(
         'Test::More' => 0,
     },
     PREREQ_PM => {
+        'Inline::Java' => 0.53,
+	'HTTP::Request' => 5.814,
+	'HTTP::Status' => 0,
         #'ABC'              => 1.6,
         #'Foo::Bar::Module' => 5.0401,
     },
