@@ -7,11 +7,8 @@ package Mallet::CrfWrapper::WebService;
 use strict;
 use warnings;
 
-use MediaWords::Util::Config;
-use MediaWords::Util::CrfExtractor;
 use Mallet::CrfWrapper;
 
-use MediaWords::Util::Web;
 use HTTP::Request;
 use HTTP::Status qw(:constants);
 use Encode;
