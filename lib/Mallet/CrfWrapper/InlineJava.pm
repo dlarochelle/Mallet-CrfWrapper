@@ -44,7 +44,6 @@ BEGIN
     # lib/CRF/CrfUtils/
     my $file_dir = dirname( __FILE__ );
 
-    # lib/CRF/
     $_crf_source_rt = "$file_dir/../";
 
     $_crf_source_rt = realpath( File::Spec->canonpath( $_crf_source_rt ) );
@@ -66,7 +65,7 @@ sub _crf_root()
 
 BEGIN
 {
-    my $jar_dir = _crf_root() . '/CrfUtils/jars';
+    my $jar_dir = _crf_root() . '/CrfWrapper/jars';
 
     my $jars = [ 'mallet-deps.jar', 'mallet.jar' ];
 
