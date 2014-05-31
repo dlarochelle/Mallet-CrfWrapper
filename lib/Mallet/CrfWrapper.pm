@@ -1,4 +1,4 @@
-package CRF::CrfUtils;
+package Mallet::CrfWrapper;
 
 #
 # Facade to either Inline::Java based or a web service-based CRF model runner
@@ -7,10 +7,10 @@ package CRF::CrfUtils;
 use strict;
 use warnings;
 
-# Name of a loaded and active CRF module, either 'CRF::CrfUtils::InlineJava' or
-# 'CRF::CrfUtils::WebService'.
+# Name of a loaded and active CRF module, either 'Mallet::CrfWrapper::InlineJava' or
+# 'Mallet::CrfWrapper::WebService'.
 #
-# Loading of the module is postponed because CRF::CrfUtils::InlineJava compiles
+# Loading of the module is postponed because Mallet::CrfWrapper::InlineJava compiles
 # a Java class and loads it into a JVM in BEGIN{}, which slows down scripts
 # that don't have anything to do with extraction
 my $_active_crf_module = undef;
@@ -48,11 +48,11 @@ sub _load_and_return_crf_module()
 
         if ( $_webservice_enabled )
         {
-            $module = 'CRF::CrfUtils::WebService';
+            $module = 'Mallet::CrfWrapper::WebService';
         }
         else
         {
-            $module = 'CRF::CrfUtils::InlineJava';
+            $module = 'Mallet::CrfWrapper::InlineJava';
         }
 
         eval {
@@ -60,7 +60,7 @@ sub _load_and_return_crf_module()
             require $file . '.pm';
             $module->import();
 
-            if ( ( $module eq 'CRF::CrfUtils::WebService' ) && ( defined( $_webservice_url ) ) )
+            if ( ( $module eq 'Mallet::CrfWrapper::WebService' ) && ( defined( $_webservice_url ) ) )
             {
                 $module->set_webservice_url( $_webservice_url );
             }

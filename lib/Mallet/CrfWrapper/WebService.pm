@@ -1,4 +1,4 @@
-package CRF::CrfUtils::WebService;
+package Mallet::CrfWrapper::WebService;
 
 #
 # Package to access CRF model runner via web service
@@ -9,7 +9,7 @@ use warnings;
 
 use MediaWords::Util::Config;
 use MediaWords::Util::CrfExtractor;
-use CRF::CrfUtils;
+use Mallet::CrfWrapper;
 
 use MediaWords::Util::Web;
 use HTTP::Request;
@@ -29,7 +29,7 @@ use constant DEFAULT_CRF_PORT => 8441;
 sub _fatal_error($)
 {
     my $error_message = shift;
-    CRF::CrfUtils::_fatal_error( $error_message );
+    Mallet::CrfWrapper::_fatal_error( $error_message );
 }
 
 my $_crf_server_url = 'http://127.0.0.1:8441/crf';
@@ -59,14 +59,14 @@ sub set_webservice_url()
 }
 
 #
-# CRF::CrfUtils "implementation"
+# Mallet::CrfWrapper "implementation"
 #
 
 sub create_model($$$)
 {
     my ( $class, $training_data_file, $iterations ) = @_;
 
-    # Clients should use CRF::CrfUtils::InlineJava directly
+    # Clients should use Mallet::CrfWrapper::InlineJava directly
     _fatal_error( "Not implemented in " . __PACKAGE__ );
 }
 

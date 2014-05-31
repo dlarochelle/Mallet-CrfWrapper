@@ -3,7 +3,7 @@
 #
 # Package to access CRF model runner via Inline::Java
 #
-package CRF::CrfUtils::InlineJava;
+package Mallet::CrfWrapper::InlineJava;
 
 use strict;
 use warnings;
@@ -55,9 +55,9 @@ sub _crf_root()
     # If this package gets moved to a different location, the subroutine will
     # stop reporting correct paths to MC root, so this is an attempt to warn
     # about the problem early
-    if ( __PACKAGE__ ne 'CRF::CrfUtils::InlineJava' )
+    if ( __PACKAGE__ ne 'Mallet::CrfWrapper::InlineJava' )
     {
-        die 'Package name is not CRF::CrfUtils::InlineJava, the package was probably moved to a different location.' .
+        die 'Package name is not Mallet::CrfWrapper::InlineJava, the package was probably moved to a different location.' .
           ' Please update _crf_root() subroutine accordingly.';
     }
 
