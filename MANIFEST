@@ -22,6 +22,7 @@ README
 t/00-load.t
 t/boilerplate.t
 t/crfwrapper-inlinejava.t
+t/crfwrapper-webservice.t
 t/manifest.t
 t/pod-coverage.t
 t/pod.t
