@@ -1,5 +1,12 @@
 package org.mediacloud.crfutils;
 
+import cc.mallet.fst.CRF;
+import cc.mallet.fst.SumLattice;
+import cc.mallet.fst.SumLatticeDefault;
+import cc.mallet.pipe.Pipe;
+import cc.mallet.pipe.iterator.LineGroupIterator;
+import cc.mallet.types.InstanceList;
+import cc.mallet.types.Sequence;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -8,20 +15,20 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.Reader;
 import java.io.StringReader;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.regex.Pattern;
-
-import cc.mallet.fst.CRF;
-import cc.mallet.fst.SumLattice;
-import cc.mallet.fst.SumLatticeDefault;
-import cc.mallet.pipe.Pipe;
-import cc.mallet.pipe.iterator.LineGroupIterator;
-import cc.mallet.types.InstanceList;
-import cc.mallet.types.Sequence;
 
 public class ModelRunner {
 
+    // Format to use for converting Double probability to string
+    private final static String PROBABILITY_DOUBLE_FORMAT = "#0.########";
+
+    // CRF instance
     private final CRF crf;
 
     public ModelRunner(String modelFileName) throws IOException,
@@ -77,14 +84,35 @@ public class ModelRunner {
         //return crfOutputsToStrings(crfResults);
     }
 
-    String[] crfOutputsToStrings(CrfOutput[] crfResults) {
+    public String[] crfOutputsToStrings(CrfOutput[] crfResults) {
         ArrayList<String> sequenceResults = new ArrayList<String>();
 
+        DecimalFormatSymbols periodAsDecimalSeparator = new DecimalFormatSymbols();
+        periodAsDecimalSeparator.setDecimalSeparator('.');
+
+        NumberFormat formatter = new DecimalFormat(PROBABILITY_DOUBLE_FORMAT, periodAsDecimalSeparator);
+
         for (CrfOutput crfResult : crfResults) {
-            sequenceResults.add(crfResult.prediction + " ");
+
+            StringBuilder line = new StringBuilder();
+
+            line.append(crfResult.prediction);
+
+            // Add (sorted) probabilities
+            for (Map.Entry<String, Double> probability : crfResult.probabilities.entrySet()) {
+                String key = probability.getKey();
+                Double value = probability.getValue();
+
+                line.append(" ");
+                line.append(key);
+                line.append("=");
+                line.append(formatter.format(value));
+            }
+
+            sequenceResults.add(line.toString());
         }
 
-        return sequenceResults.toArray(new String[sequenceResults.size()]);
+        return sequenceResults.toArray(new String[0]);
     }
 
     private InstanceList readTestData(String testFileName) throws FileNotFoundException {
@@ -113,7 +141,7 @@ public class ModelRunner {
     public class CrfOutput {
 
         public String prediction;
-        public HashMap<String, Double> probabilities;
+        public TreeMap<String, Double> probabilities;
     };
 
     private CrfOutput[] predictSequence(Sequence input) {
@@ -138,7 +166,7 @@ public class ModelRunner {
             //System.err.println(" Input Pos " + j);
             CrfOutput crfResult = new CrfOutput();
 
-            crfResult.probabilities = new HashMap<String, Double>();
+            crfResult.probabilities = new TreeMap<String, Double>();
 
             for (int si = 0; si < crf.numStates(); si++) {
                 // to state sj at input position ip
