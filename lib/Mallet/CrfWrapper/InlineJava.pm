@@ -8,7 +8,7 @@ package Mallet::CrfWrapper::InlineJava;
 use strict;
 use warnings;
 
-use 5.16.3;
+use 5.16.2;
 
 use Mallet::CrfWrapper;
 
