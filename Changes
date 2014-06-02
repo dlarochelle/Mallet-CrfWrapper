@@ -1,5 +1,23 @@
 Revision history for Mallet-CrfWrapper
 
+0.02    2014-06-03
+        * Fix "WebService" method (make it work, remove mentions of Media
+          Cloud).
+        * Add unit tests for both the "InlineJava" and "WebService" CRF model
+          runner methods.
+        * "InlineJava": instead of fetching an array with Java objects, fetch
+          a single string from Java class and parse it on Perl's side. This is
+          needed in order to reduce Inline::Java usage to the minimum and thus
+          speed up the model runner by 4x.
+        * "WebService": instead of JSON, return a newline-and-space-separated
+          plain text as a CRF model runner result. This is how it's being used
+          in Inline::Java's case, so we can reuse the same helper subroutines
+          and avoid encoding / decoding JSON.
+        * Round probabilities to up to 8 digits after decimal point in order to
+          make it comparable (thus testable in unit tests).
+        * Fixed JUnit unit tests.
+        * Some repository cleanup.
+
 0.01    Date/time
         First version, released on an unsuspecting world.
 
