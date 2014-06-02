@@ -6,7 +6,6 @@ lib/Mallet/CrfWrapper/WebService.pm
 lib/Mallet/CrfWrapper/InlineJava.pm
 lib/Mallet/java/CrfUtils/nbactions.xml
 lib/Mallet/java/CrfUtils/README.mdown
-lib/Mallet/java/CrfUtils/crfutils_wrapper.sh
 lib/Mallet/java/CrfUtils/src/main/resources/cc/mallet/util/logging.properties
 lib/Mallet/java/CrfUtils/src/main/java/org/mediacloud/crfutils/ModelRunner.java
 lib/Mallet/java/CrfUtils/src/main/java/org/mediacloud/crfutils/WebServerHandler.java
