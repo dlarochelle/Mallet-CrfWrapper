@@ -19,11 +19,14 @@ WriteMakefile(
     },
     PREREQ_PM => {
         'Inline::Java' => 0.53,
-	'HTTP::Request' => 5.814,
-	'HTTP::Status' => 0,
+        'HTTP::Request' => 5.814,
+        'HTTP::Status' => 0,
+        'LWP::UserAgent' => 0,
         #'ABC'              => 1.6,
         #'Foo::Bar::Module' => 5.0401,
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'Mallet-CrfWrapper-*' },
+    clean => {
+        FILES => 'Mallet-CrfWrapper-* lib/Mallet/java/CrfUtils/target/ _Inline/'
+    },
 );
