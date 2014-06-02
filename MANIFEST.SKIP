@@ -8,5 +8,7 @@
 # Makemaker generated files and dirs.
 ^MANIFEST\.
 ^Makefile$
+^Makefile\.old$
 ^blib/
+^pm_to_blib
 ^MakeMaker-\d
