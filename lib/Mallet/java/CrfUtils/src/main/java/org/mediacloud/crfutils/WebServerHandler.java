@@ -12,8 +12,6 @@ import java.util.Date;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
-
-import com.google.gson.Gson;
 import org.simpleframework.http.Request;
 import org.simpleframework.http.Response;
 import org.simpleframework.http.Status;
@@ -113,8 +111,6 @@ public class WebServerHandler implements Container {
         @Override
         public void run() {
 
-            Gson gson = new Gson();
-
             try {
 
                 String stringResponse;
@@ -145,23 +141,20 @@ public class WebServerHandler implements Container {
                                 throw new Exception("Unable to initialize CRF model runner.");
                             }
 
-                            ModelRunner.CrfOutput[] crfResults = modelRunner.runModelString(postData);
-
+                            String crfResults = modelRunner.runModelStringReturnString(postData);
                             if (null == crfResults) {
                                 throw new Exception("CRF processing results are nil.");
                             }
 
                             response.setStatus(Status.OK);
-                            stringResponse = gson.toJson(crfResults);
+                            stringResponse = crfResults;
 
                         } catch (Exception e) {
 
                             String errorMessage = "Unable to extract: " + exceptionStackTraceToString(e);
 
                             response.setStatus(Status.INTERNAL_SERVER_ERROR);
-
-                            //TODO format error as JSON HashMap
-                            stringResponse = gson.toJson(errorMessage);
+                            stringResponse = errorMessage;
                         }
 
                     }

@@ -13,7 +13,6 @@ use HTTP::Request;
 use HTTP::Status qw(:constants);
 use Encode;
 use URI;
-use JSON;
 
 use Data::Dumper;
 
@@ -156,7 +155,10 @@ sub run_model_inline_java_data_array($$$)
         _fatal_error( "Server returned nothing for POST data: " . $test_data );
     }
 
-    my $results = decode_json( $results_string );
+    my $results = Mallet::CrfWrapper::convert_crf_string_to_arrayref( $results_string );
+    unless ( defined $results ) {
+        _fatal_error( "CRF results string is undef." );
+    }
 
     return $results;
 }
