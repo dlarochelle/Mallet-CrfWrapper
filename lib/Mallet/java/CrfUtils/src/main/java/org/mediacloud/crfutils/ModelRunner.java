@@ -66,10 +66,9 @@ public class ModelRunner {
          System.err.println("Max Memory: " + rt.maxMemory() / 1024 + " KB");
          System.err.println("");
          */
-
-        if ( testData.size() >  1) {
-             throw new IllegalArgumentException("test data may only contain one sequence");
-         }
+        if (testData.size() > 1) {
+            throw new IllegalArgumentException("test data may only contain one sequence");
+        }
 
         Sequence input = (Sequence) testData.get(0).getData();
 
@@ -81,9 +80,8 @@ public class ModelRunner {
     String[] crfOutputsToStrings(CrfOutput[] crfResults) {
         ArrayList<String> sequenceResults = new ArrayList<String>();
 
-        for ( CrfOutput crfResult: crfResults )
-        {
-            sequenceResults.add( crfResult.prediction + " ");
+        for (CrfOutput crfResult : crfResults) {
+            sequenceResults.add(crfResult.prediction + " ");
         }
 
         return sequenceResults.toArray(new String[sequenceResults.size()]);
@@ -113,6 +111,7 @@ public class ModelRunner {
     }
 
     public class CrfOutput {
+
         public String prediction;
         public HashMap<String, Double> probabilities;
     };
@@ -124,25 +123,24 @@ public class ModelRunner {
 
         try {
             if (output.size() != input.size()) {
-                     throw new RuntimeException("Failed to decode input sequence " + input);
+                throw new RuntimeException("Failed to decode input sequence " + input);
             }
         } catch (RuntimeException e) {
             System.err.println("Exception: " + e.getMessage());
             return new CrfOutput[0];
         }
 
-         SumLattice lattice = new SumLatticeDefault(crf,input);
+        SumLattice lattice = new SumLatticeDefault(crf, input);
 
-        ArrayList<CrfOutput> crfResults   = new ArrayList<CrfOutput>();
+        ArrayList<CrfOutput> crfResults = new ArrayList<CrfOutput>();
         for (int j = 0; j < input.size(); j++) {
 
             //System.err.println(" Input Pos " + j);
-
             CrfOutput crfResult = new CrfOutput();
 
             crfResult.probabilities = new HashMap<String, Double>();
 
-            for ( int si = 0; si < crf.numStates(); si++) {
+            for (int si = 0; si < crf.numStates(); si++) {
                 // to state sj at input position ip
                 // double twoStateMarginal = lattice.getXiProbability(j,crf.getState(si),crf.getState(sj));
                 // probability of being in state si at input position ip
@@ -150,23 +148,20 @@ public class ModelRunner {
 
                 String stateName = crf.getState(si).getName();
                 //System.err.println( "Marginal prob: " + stateName + " " +oneStateMarginal );
-                crfResult.probabilities.put( stateName, oneStateMarginal);
+                crfResult.probabilities.put(stateName, oneStateMarginal);
             }
-
 
             String prediction = output.get(j).toString();
 
             crfResult.prediction = prediction;
 
             //System.err.println( "Prediction: " + prediction);
-
             //sequenceResults.add(prediction + " ");
-
-            crfResults.add( crfResult);
+            crfResults.add(crfResult);
 
         }
 
-        return crfResults.toArray( new CrfOutput[0] );
+        return crfResults.toArray(new CrfOutput[0]);
     }
 
     private static String joinArrayToString(String glue, String[] array) {
