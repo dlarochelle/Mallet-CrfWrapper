@@ -127,6 +127,64 @@ sub run_model_inline_java_data_array($$)
     return $module->run_model_inline_java_data_array( $model_file_name, $test_data_array );
 }
 
+# Helper to convert string:
+#
+#     excluded O=0.00008472 excluded=0.54451586 optional=0.45517693 required=0.00022249
+#     excluded O=0.00000374 excluded=0.95802485 optional=0.04084096 required=0.00113045
+#     ...
+#
+# to arrayref:
+#
+# [
+#   {
+#     'prediction' => 'excluded',
+#     'probabilities' => {
+#       'O' => '8.472e-05',
+#       'required' => '0.00022249',
+#       'excluded' => '0.54451586',
+#       'optional' => '0.45517693'
+#     }
+#   },
+#   {
+#     'prediction' => 'excluded',
+#     'probabilities' => {
+#       'O' => '3.74e-06',
+#       'required' => '0.00113045',
+#       'excluded' => '0.95802485',
+#       'optional' => '0.04084096'
+#     }
+#   },
+#   ...
+# ]
+#
+sub convert_crf_string_to_arrayref($)
+{
+    my $string = shift;
+
+    # Format:
+    #
+
+    my @result;
+    my @lines = split("\n", $string);
+
+    foreach my $line ( @lines ) {
+
+        my @line_parts = split(' ', $line);
+
+        my $prediction = $line_parts[0];
+        my $probabilities = {};
+
+        for (my $x = 1; $x <= $#line_parts; ++$x) {
+            my ( $name, $value ) = split('=', $line_parts[$x]);
+            $probabilities->{ $name } = $value + 0;
+        }
+
+        push( @result, { 'prediction' => $prediction, 'probabilities' => $probabilities } );
+    }
+
+    return \@result;
+}
+
 # Helper
 sub _fatal_error($)
 {

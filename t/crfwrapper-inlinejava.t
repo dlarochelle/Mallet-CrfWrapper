@@ -2,10 +2,11 @@
 use 5.006;
 use strict;
 use warnings FATAL => 'all';
-use Test::More tests => 9;
+use Test::More tests => 10;
 
 BEGIN {
-    use_ok( 'Mallet::CrfWrapper::InlineJava' )
+    use_ok( 'Mallet::CrfWrapper' );
+    use_ok( 'Mallet::CrfWrapper::InlineJava' );
 }
 
 use constant PATH_TO_TEST_RESOURCES => 'lib/Mallet/java/CrfUtils/src/test/resources/org/mediacloud/crfutils/';
@@ -30,42 +31,11 @@ sub read_file_into_string($)
     return $string;
 }
 
-sub convert_crf_string_to_arrayref($)
-{
-    my $string = shift;
-
-    # Format:
-    #
-    # excluded O=0.00008472 excluded=0.54451586 optional=0.45517693 required=0.00022249
-    # excluded O=0.00000374 excluded=0.95802485 optional=0.04084096 required=0.00113045
-    # ...
-
-    my @result;
-    my @lines = split("\n", $string);
-
-    foreach my $line ( @lines ) {
-
-        my @line_parts = split(' ', $line);
-
-        my $prediction = $line_parts[0];
-        my $probabilities = {};
-
-        for (my $x = 1; $x <= $#line_parts; ++$x) {
-            my ( $name, $value ) = split('=', $line_parts[$x]);
-            $probabilities->{ $name } = $value + 0;
-        }
-
-        push( @result, { 'prediction' => $prediction, 'probabilities' => $probabilities } );
-    }
-
-    return \@result;
-}
-
 my $input = read_file_into_string( TEST_INPUT_FILE );
 ok( $input, 'Input file has been read' );
 my $expected_output = read_file_into_string( TEST_OUTPUT_FILE );
 ok( $expected_output, 'Expected output file has been read' );
-my $expected_output_arrayref = convert_crf_string_to_arrayref( $expected_output );
+my $expected_output_arrayref = Mallet::CrfWrapper::convert_crf_string_to_arrayref( $expected_output );
 is( ref($expected_output_arrayref), ref([]), 'Processed expected output file is arrayref');
 
 my @input_array = split( "\n", $input );
