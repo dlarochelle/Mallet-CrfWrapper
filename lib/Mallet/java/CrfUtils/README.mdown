@@ -10,7 +10,7 @@ It is easy to test and improve the project using the
 
 To start the webserver:
 
-    cd java/CrfUtils/
+    cd lib/Mallet/java/CrfUtils/
     mvn compile
     mvn test
     mvn exec:java
@@ -22,10 +22,10 @@ To change host to listen to (e.g. "127.0.0.1" for local connections only,
 
 To try the webserver:
 
-    cd java/CrfUtils/src/test/resources/org/mediacloud/crfutils/
+    cd lib/Mallet/java/CrfUtils/src/test/resources/org/mediacloud/crfutils/
     curl -X POST --data-binary @test_input.txt http://127.0.0.1:8441/
 
 To benchmark the webserver:
 
-    cd java/CrfUtils/src/test/resources/org/mediacloud/crfutils/
+    cd lib/Mallet/java/CrfUtils/src/test/resources/org/mediacloud/crfutils/
     ab -n 10000 -c 16 -p test_input.txt http://127.0.0.1:8441/
