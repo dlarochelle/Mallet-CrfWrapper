@@ -173,7 +173,7 @@ sub _run_model_on_array($$$)
         my $probability_entries = $crf_result->{ probabilities }->entrySet()->toArray();
 
         my @probabilities =
-          map { cast( 'java.util.Map$Entry', $_ )->getKey() => cast( 'java.util.Map$Entry', $_ )->getValue() }
+          map { cast( 'java.util.Map$Entry', $_ )->getKey() => sprintf('%.8f', cast( 'java.util.Map$Entry', $_ )->getValue()) + 0 }
           @{ $probability_entries };
 
         my $result = {
