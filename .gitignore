@@ -16,6 +16,7 @@ pod2htm*.tmp
 pm_to_blib
 Mallet-CrfWrapper-*
 Mallet-CrfWrapper-*.tar.gz
+*.bak
 
 # Inline::Java files
 _Inline
