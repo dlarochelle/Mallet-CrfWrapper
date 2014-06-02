@@ -78,21 +78,13 @@
         </resources>
 
         <testResources>
-            
-            <!-- Use a "live" Media Cloud extractor model from lib/MediaWords/Util/models/ for testing -->
-            <testResource>
-                <directory>${basedir}/../../../../lib/MediaWords/Util/models/</directory>
-                <targetPath>org/mediacloud/crfutils</targetPath>
-                <includes>
-                    <include>crf_extractor_model</include>
-                </includes>
-            </testResource>
-            
-            <!-- Include "test input" and "expected output" files too -->
+                        
+            <!-- Include extractor model, "test input" and "expected output" files -->
             <testResource>
                 <directory>src/test/resources/org/mediacloud/crfutils/</directory>
                 <targetPath>org/mediacloud/crfutils</targetPath>
                 <includes>
+                    <include>crf_extractor_model</include>
                     <include>test_input.txt</include>
                     <include>test_output.txt</include>
                 </includes>
