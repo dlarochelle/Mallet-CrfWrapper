@@ -13,12 +13,15 @@ To start the webserver:
     cd lib/Mallet/java/CrfUtils/
     mvn compile
     mvn test
-    mvn exec:java
+    mvn exec:java -Dcrf.extractorModelPath=path/to/crf_extractor_model
 
 To change host to listen to (e.g. "127.0.0.1" for local connections only,
 "0.0.0.0" for "world"), port to listen to, or number of threads:
 
-    mvn exec:java -Dcrf.httpListen=0.0.0.0:8441 -Dcrf.numberOfThreads=16
+    mvn exec:java \
+        -Dcrf.extractorModelPath=path/to/crf_extractor_model \
+        -Dcrf.httpListen=0.0.0.0:8441 \
+        -Dcrf.numberOfThreads=16
 
 To try the webserver:
 
