@@ -6,7 +6,7 @@ use warnings;
 
 =head1 NAME
 
-Mallet::CrfWrapper 
+Mallet::CrfWrapper - a convenient wrapper around Mallet's CRF package.
 
 =head1 VERSION
 
