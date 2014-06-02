@@ -153,7 +153,7 @@ public class WebServerHandler implements Container {
                             response.setStatus(Status.INTERNAL_SERVER_ERROR);
 
                             //TODO format error as JSON HashMap
-                            stringResponse = gson.toJson( errorMessage );
+                            stringResponse = gson.toJson(errorMessage);
                         }
 
                     }
