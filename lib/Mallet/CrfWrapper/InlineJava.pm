@@ -181,7 +181,7 @@ sub _run_model_on_array($$$)
             probabilities => { @probabilities },
         };
 
-        say STDERR Dumper( $result );
+        # say STDERR Dumper( $result );
 
         push $results, $result;
     }
