@@ -1,5 +1,6 @@
 package org.mediacloud.crfutils;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
@@ -11,8 +12,6 @@ import java.util.Date;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
-
-import com.google.gson.Gson;
 import org.simpleframework.http.Request;
 import org.simpleframework.http.Response;
 import org.simpleframework.http.Status;
@@ -24,8 +23,10 @@ import org.simpleframework.transport.connect.SocketConnection;
 
 public class WebServerHandler implements Container {
 
-    // Path to CRF model (absolute or relative to lib/CRF/java/CrfUtils/)
-    private final static String CRF_MODEL_PATH = "../../../../lib/MediaWords/Util/models/crf_extractor_model";
+    // Path to test CRF model that is going to be used if no
+    // crf.extractorModelPath property has been provided (absolute or relative
+    // to lib/Mallet/java/CrfUtils/)
+    private final static String TEST_CRF_MODEL_PATH = "src/test/resources/org/mediacloud/crfutils/crf_extractor_model";
 
     // Server identifier
     private final static String SERVER_IDENTIFIER = "CRFUtils/1.0";
@@ -37,6 +38,7 @@ public class WebServerHandler implements Container {
 
         private final Response response;
         private final Request request;
+        private static String crfExtractorModelPath;
 
         // One modelRunner per thread
         private static final ThreadLocal< ModelRunner> threadLocal
@@ -48,7 +50,7 @@ public class WebServerHandler implements Container {
 
                         try {
                             System.err.println("Creating new CRF model runner for thread " + Thread.currentThread().getName());
-                            modelRunner = new ModelRunner(CRF_MODEL_PATH);
+                            modelRunner = new ModelRunner(crfExtractorModelPath);
                         } catch (IOException e) {
                             System.err.println("Unable to initialize CRF model runner: " + e.getMessage());
                             return null;
@@ -64,9 +66,13 @@ public class WebServerHandler implements Container {
         private final static String dateFormat = "[dd/MMM/yyyy:HH:mm:ss Z]";
         private final static SimpleDateFormat dateFormatter = new SimpleDateFormat(dateFormat);
 
-        public Task(Request request, Response response) {
+        public Task(Request request, Response response, String crfExtractorModelPath) {
             this.response = response;
             this.request = request;
+
+            // Not the best pattern around, but the CRF extractor path will
+            // remain the same for each Task, so we just (re)set it here
+            Task.crfExtractorModelPath = crfExtractorModelPath;
         }
 
         private static void printAccessLog(Request request, Response response, long responseLength) {
@@ -105,8 +111,6 @@ public class WebServerHandler implements Container {
         @Override
         public void run() {
 
-            Gson gson = new Gson();
-
             try {
 
                 String stringResponse;
@@ -137,23 +141,20 @@ public class WebServerHandler implements Container {
                                 throw new Exception("Unable to initialize CRF model runner.");
                             }
 
-                            ModelRunner.CrfOutput[] crfResults = modelRunner.runModelString(postData);
-
+                            String crfResults = modelRunner.runModelStringReturnString(postData);
                             if (null == crfResults) {
                                 throw new Exception("CRF processing results are nil.");
                             }
 
                             response.setStatus(Status.OK);
-                            stringResponse = gson.toJson(crfResults);
+                            stringResponse = crfResults;
 
                         } catch (Exception e) {
 
                             String errorMessage = "Unable to extract: " + exceptionStackTraceToString(e);
 
                             response.setStatus(Status.INTERNAL_SERVER_ERROR);
-
-                            //TODO format error as JSON HashMap
-                            stringResponse = gson.toJson( errorMessage );
+                            stringResponse = errorMessage;
                         }
 
                     }
@@ -187,16 +188,18 @@ public class WebServerHandler implements Container {
 
     private final Executor executor;
     private final SimpleThreadFactory threadFactory;
+    private final String crfExtractorModelPath;
 
-    public WebServerHandler(int size) {
+    public WebServerHandler(int size, String crfExtractorModelPath) {
         this.threadFactory = new SimpleThreadFactory();
         this.executor = Executors.newFixedThreadPool(size, this.threadFactory);
+        this.crfExtractorModelPath = crfExtractorModelPath;
     }
 
     @Override
     public void handle(Request request, Response response) {
 
-        Task task = new Task(request, response);
+        Task task = new Task(request, response, this.crfExtractorModelPath);
 
         executor.execute(task);
     }
@@ -239,12 +242,41 @@ public class WebServerHandler implements Container {
             throw new Exception("crf.numberOfThreads is below 1.");
         }
 
+        String extractorModelPath = System.getProperty("crf.extractorModelPath");
+        if (null == extractorModelPath) {
+            System.err.println();
+            System.err.println("***");
+            System.err.println();
+            System.err.println("There was no crf.extractorModelPath property provided,");
+            System.err.println("so I will use the test CRF extractor model located at:");
+            System.err.println();
+            System.err.println("    " + TEST_CRF_MODEL_PATH);
+            System.err.println();
+            System.err.println("Unless you're starting this web service from a unit test,");
+            System.err.println("this might not be exactly what you want.");
+            System.err.println();
+            System.err.println("Set the crf.extractorModelPath property by running:");
+            System.err.println();
+            System.err.println("    mvn exec:java -Dcrf.extractorModelPath=path/to/crf_extractor_model");
+            System.err.println();
+            System.err.println("***");
+            System.err.println();
+
+            extractorModelPath = TEST_CRF_MODEL_PATH;
+        }
+
+        File f = new File(extractorModelPath);
+        if (!(f.exists() && !f.isDirectory())) {
+            throw new Exception("Extractor model path does not exist at path: " + extractorModelPath);
+        }
+
         System.err.println("Will listen to " + httpListenHost + ":" + httpListenPort + ".");
         System.err.println("Will spawn " + numberOfThreads + " threads.");
+        System.err.println("Will use extractor model located at " + extractorModelPath + ".");
 
         // Start the CRF model runner web service
         System.err.println("Setting up...");
-        Container container = new WebServerHandler(numberOfThreads);
+        Container container = new WebServerHandler(numberOfThreads, extractorModelPath);
         Server server = new ContainerServer(container);
         Connection connection = new SocketConnection(server);
         SocketAddress address = new InetSocketAddress(httpListenHost, httpListenPort);

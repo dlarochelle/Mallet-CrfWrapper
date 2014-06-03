@@ -8,7 +8,9 @@ package Mallet::CrfWrapper::InlineJava;
 use strict;
 use warnings;
 
-use 5.16.3;
+use 5.16.2;
+
+use Mallet::CrfWrapper;
 
 use Readonly;
 use Data::Dumper;
@@ -159,31 +161,14 @@ sub _run_model_on_array($$$)
 
     # Returning and using a single string from a Java method is way faster than
     # returning and using an array of strings
-    my $crf_results = $modelrunner->runModelString( $test_data );
+    my $crf_results_string = $modelrunner->runModelStringReturnString( $test_data );
+    unless ( defined $crf_results_string ) {
+        die "CRF results are undef.";
+    }
 
-    my $results = [];
-
-    use Inline::Java qw(cast);
-
-    for my $crf_result ( @$crf_results )
-    {
-        #say STDERR Dumper( $crf_result );
-
-        my $prediction          = $crf_result->{ prediction };
-        my $probability_entries = $crf_result->{ probabilities }->entrySet()->toArray();
-
-        my @probabilities =
-          map { cast( 'java.util.Map$Entry', $_ )->getKey() => cast( 'java.util.Map$Entry', $_ )->getValue() }
-          @{ $probability_entries };
-
-        my $result = {
-            prediction    => $prediction,
-            probabilities => { @probabilities },
-        };
-
-        say STDERR Dumper( $result );
-
-        push $results, $result;
+    my $results = Mallet::CrfWrapper::convert_crf_string_to_arrayref( $crf_results_string );
+    unless ( defined $results ) {
+        die "CRF results string is undef.";
     }
 
     return $results;

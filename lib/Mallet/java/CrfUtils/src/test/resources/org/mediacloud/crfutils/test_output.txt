@@ -1,384 +1,384 @@
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-required 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
-excluded 
+excluded O=0.00008472 excluded=0.54451586 optional=0.45517693 required=0.00022249
+excluded O=0.00000374 excluded=0.95802485 optional=0.04084096 required=0.00113045
+excluded O=0.00000095 excluded=0.95664907 optional=0.04233905 required=0.00101093
+excluded O=0.00000058 excluded=0.98411115 optional=0.01468959 required=0.00119869
+excluded O=0.00000164 excluded=0.99791882 optional=0.00206066 required=0.00001888
+excluded O=0.00000098 excluded=0.99952982 optional=0.00012973 required=0.00033947
+excluded O=0.00000069 excluded=0.99981505 optional=0.00012355 required=0.00006071
+excluded O=0.00000156 excluded=0.99994052 optional=0.00003013 required=0.0000278
+excluded O=0.00000008 excluded=0.99986094 optional=0.00002903 required=0.00010995
+excluded O=0.00000041 excluded=0.99920175 optional=0.00055665 required=0.00024118
+excluded O=0.00000022 excluded=0.9935577 optional=0.00567894 required=0.00076313
+excluded O=0.00000003 excluded=0.99891493 optional=0.00102781 required=0.00005724
+excluded O=0.00000011 excluded=0.99975907 optional=0.00008642 required=0.00015439
+excluded O=0.00000152 excluded=0.9964036 optional=0.00304625 required=0.00054864
+excluded O=0.00000161 excluded=0.93435715 optional=0.0645747 required=0.00106653
+excluded O=0.00000161 excluded=0.93931849 optional=0.05960989 required=0.00107002
+excluded O=0.00000205 excluded=0.9825168 optional=0.01520215 required=0.00227901
+excluded O=0.00000289 excluded=0.98774716 optional=0.00948465 required=0.0027653
+excluded O=0.00000203 excluded=0.98988942 optional=0.00784034 required=0.0022682
+excluded O=0.0000013 excluded=0.98939559 optional=0.00872164 required=0.00188146
+excluded O=0.00000191 excluded=0.99133182 optional=0.00681765 required=0.00184862
+excluded O=0.00000176 excluded=0.9848802 optional=0.01311673 required=0.00200131
+excluded O=0.00000253 excluded=0.99008875 optional=0.00820887 required=0.00169985
+excluded O=0.00000293 excluded=0.98772611 optional=0.01041714 required=0.00185383
+excluded O=0.00000168 excluded=0.99043312 optional=0.00837798 required=0.00118722
+excluded O=0.00000016 excluded=0.99908991 optional=0.00078551 required=0.00012442
+excluded O=0.00000012 excluded=0.99826412 optional=0.00153278 required=0.00020297
+excluded O=0.00000008 excluded=0.99862441 optional=0.00133579 required=0.00003972
+excluded O=0.00000003 excluded=0.99946091 optional=0.00052606 required=0.000013
+excluded O=0.00000001 excluded=0.99970664 optional=0.00029136 required=0.00000199
+excluded O=0.00000002 excluded=0.99929341 optional=0.00069902 required=0.00000754
+excluded O=0.00000005 excluded=0.99968522 optional=0.00017116 required=0.00014356
+excluded O=0.00000033 excluded=0.99627177 optional=0.00361987 required=0.00010803
+excluded O=0.00000017 excluded=0.99788962 optional=0.00154297 required=0.00056725
+excluded O=0.0000002 excluded=0.9855154 optional=0.01382093 required=0.00066347
+excluded O=0.00000001 excluded=0.99993024 optional=0.00005687 required=0.00001288
+excluded O=0.00000008 excluded=0.99995262 optional=0.00003455 required=0.00001275
+excluded O=0.00000031 excluded=0.98440516 optional=0.01492226 required=0.00067228
+excluded O=0.00000007 excluded=0.99955849 optional=0.0004176 required=0.00002385
+excluded O=0.00000001 excluded=0.99996577 optional=0.00002065 required=0.00001357
+excluded O=0.00000005 excluded=0.99990392 optional=0.00008617 required=0.00000986
+excluded O=0.00000001 excluded=0.99996854 optional=0.00001812 required=0.00001332
+excluded O=0.00000002 excluded=0.99986606 optional=0.00012561 required=0.0000083
+excluded O=0.00000001 excluded=0.99975956 optional=0.0002192 required=0.00002123
+excluded O=0.00000012 excluded=0.99956413 optional=0.00038281 required=0.00005293
+excluded O=0.00000036 excluded=0.99964119 optional=0.00012365 required=0.00023479
+excluded O=0.00000171 excluded=0.98780871 optional=0.01154605 required=0.00064353
+excluded O=0.00000024 excluded=0.98540118 optional=0.0144838 required=0.00011478
+excluded O=0.00000011 excluded=0.99958827 optional=0.00022513 required=0.00018649
+excluded O=0.00000066 excluded=0.99574905 optional=0.0035959 required=0.00065439
+excluded O=0.00000365 excluded=0.98820465 optional=0.0114942 required=0.0002975
+excluded O=0.00000029 excluded=0.99924359 optional=0.00037773 required=0.00037838
+excluded O=0.00000022 excluded=0.99320954 optional=0.00646006 required=0.00033019
+excluded O=0.00000005 excluded=0.99956694 optional=0.0004179 required=0.00001511
+excluded O=0.00000001 excluded=0.99998137 optional=0.00001269 required=0.00000594
+excluded O=0.00000001 excluded=0.99986794 optional=0.00012195 required=0.0000101
+excluded O=0.00000001 excluded=0.99982791 optional=0.00016338 required=0.00000869
+excluded O=0.00000001 excluded=0.99986529 optional=0.00012447 required=0.00001023
+excluded O=0.00000016 excluded=0.99974231 optional=0.00023943 required=0.0000181
+excluded O=0.0000003 excluded=0.98447281 optional=0.01485491 required=0.00067197
+excluded O=0.00000001 excluded=0.99993619 optional=0.00005581 required=0.00000798
+excluded O=0.00000001 excluded=0.99998352 optional=0.00001367 required=0.00000281
+excluded O=0.00000003 excluded=0.99974605 optional=0.00023246 required=0.00002146
+excluded O=0.00000002 excluded=0.99969712 optional=0.00029031 required=0.00001255
+excluded O=0.00000007 excluded=0.9995619 optional=0.00040163 required=0.0000364
+excluded O=0.00000046 excluded=0.99672724 optional=0.00322882 required=0.00004348
+excluded O=0.00000026 excluded=0.99790846 optional=0.00165722 required=0.00043406
+excluded O=0.00000041 excluded=0.99330181 optional=0.00634027 required=0.00035751
+excluded O=0.00000001 excluded=0.99934406 optional=0.00062771 required=0.00002822
+excluded O=0.0000002 excluded=0.99905739 optional=0.00090488 required=0.00003753
+excluded O=0.00000159 excluded=0.98921995 optional=0.00991644 required=0.00086202
+excluded O=0.00000007 excluded=0.9998728 optional=0.0000849 required=0.00004224
+excluded O=0.00000001 excluded=0.99996496 optional=0.00001694 required=0.00001809
+excluded O=0.00000001 excluded=0.99982901 optional=0.00016226 required=0.00000873
+excluded O=0.00000001 excluded=0.99985891 optional=0.00013333 required=0.00000775
+excluded O=0.00000002 excluded=0.99985429 optional=0.00014034 required=0.00000535
+excluded O=0.00000001 excluded=0.99969391 optional=0.00029623 required=0.00000985
+excluded O=0.00000002 excluded=0.99921216 optional=0.00076479 required=0.00002303
+excluded O=0.00000002 excluded=0.99992224 optional=0.00007346 required=0.00000428
+excluded O=0.00000002 excluded=0.99892266 optional=0.0010634 required=0.00001392
+excluded O=0.00000002 excluded=0.99975439 optional=0.0002355 required=0.0000101
+excluded O=0.00000001 excluded=0.99961462 optional=0.00037977 required=0.0000056
+excluded O=0.00000006 excluded=0.99977225 optional=0.00022549 required=0.00000219
+excluded O=0.00000002 excluded=0.99935794 optional=0.00061558 required=0.00002646
+excluded O=0.00000048 excluded=0.99919641 optional=0.0007524 required=0.00005071
+excluded O=0.00000084 excluded=0.99934311 optional=0.0003267 required=0.00032935
+excluded O=0.00000049 excluded=0.99784508 optional=0.00172944 required=0.00042499
+excluded O=0.00000002 excluded=0.99901002 optional=0.00096473 required=0.00002523
+excluded O=0.00000002 excluded=0.99971912 optional=0.00026899 required=0.00001187
+excluded O=0.00000002 excluded=0.99972392 optional=0.00026416 required=0.00001191
+excluded O=0.00000018 excluded=0.99957478 optional=0.00040012 required=0.00002492
+excluded O=0.00000026 excluded=0.9851608 optional=0.01395588 required=0.00088306
+excluded O=0.00000001 excluded=0.99924663 optional=0.0007318 required=0.00002155
+excluded O=0.00000001 excluded=0.99985213 optional=0.00013997 required=0.00000789
+excluded O=0.00000005 excluded=0.99990298 optional=0.00008716 required=0.00000981
+excluded O=0.00000001 excluded=0.99996822 optional=0.00001831 required=0.00001346
+excluded O=0.00000003 excluded=0.99975725 optional=0.00022765 required=0.00001508
+excluded O=0.00000003 excluded=0.99896946 optional=0.00101225 required=0.00001826
+excluded O=0.00000002 excluded=0.99928853 optional=0.00070444 required=0.00000701
+excluded O=0.00000001 excluded=0.99977726 optional=0.00020676 required=0.00001598
+excluded O=0.00000001 excluded=0.99952614 optional=0.00046691 required=0.00000694
+excluded O=0.00000002 excluded=0.99945199 optional=0.00053279 required=0.00001519
+excluded O=0.00000008 excluded=0.99962306 optional=0.00033751 required=0.00003934
+excluded O=0.00000024 excluded=0.99845338 optional=0.00123789 required=0.00030849
+excluded O=0.00000026 excluded=0.98738569 optional=0.01217759 required=0.00043647
+excluded O=0.00000001 excluded=0.99937483 optional=0.00060717 required=0.00001799
+excluded O=0.00000001 excluded=0.99985336 optional=0.00013876 required=0.00000787
+excluded O=0.00000003 excluded=0.99987296 optional=0.00011708 required=0.00000993
+excluded O=0.00000002 excluded=0.9990211 optional=0.00097463 required=0.00000425
+excluded O=0.00000022 excluded=0.9992098 optional=0.00075956 required=0.00003042
+excluded O=0.00000134 excluded=0.98785972 optional=0.01154687 required=0.00059207
+excluded O=0.00000001 excluded=0.99988103 optional=0.00010231 required=0.00001665
+excluded O=0.00000005 excluded=0.99990319 optional=0.00008687 required=0.00000989
+excluded O=0.00000001 excluded=0.99996854 optional=0.00001813 required=0.00001332
+excluded O=0.00000002 excluded=0.99986598 optional=0.00012569 required=0.00000831
+excluded O=0.00000003 excluded=0.99973992 optional=0.0002384 required=0.00002165
+excluded O=0.00000004 excluded=0.99958076 optional=0.0004022 required=0.00001701
+excluded O=0.00000001 excluded=0.99947911 optional=0.00051177 required=0.0000091
+excluded O=0.00000001 excluded=0.99957321 optional=0.00042257 required=0.00000421
+excluded O=0.00000009 excluded=0.99917554 optional=0.00072009 required=0.00010428
+excluded O=0.00000214 excluded=0.9909041 optional=0.00881831 required=0.00027546
+excluded O=0.0000006 excluded=0.9942163 optional=0.00569519 required=0.00008791
+excluded O=0.00000027 excluded=0.99775562 optional=0.00178302 required=0.0004611
+excluded O=0.00000022 excluded=0.99508783 optional=0.00471163 required=0.00020032
+excluded O=0.00000002 excluded=0.99820866 optional=0.00173378 required=0.00005755
+excluded O=0.00000001 excluded=0.99957358 optional=0.00040577 required=0.00002064
+excluded O=0.0000002 excluded=0.99906615 optional=0.00089628 required=0.00003737
+excluded O=0.00000159 excluded=0.98919981 optional=0.00993771 required=0.00086089
+excluded O=0.00000001 excluded=0.99983713 optional=0.00012957 required=0.00003328
+excluded O=0.00000001 excluded=0.9998591 optional=0.00013293 required=0.00000796
+excluded O=0.00000001 excluded=0.99985937 optional=0.00013285 required=0.00000776
+excluded O=0.00000001 excluded=0.99985937 optional=0.00013286 required=0.00000776
+excluded O=0.00000001 excluded=0.99985888 optional=0.00013332 required=0.00000779
+excluded O=0.00000009 excluded=0.99982037 optional=0.00016946 required=0.00001009
+excluded O=0.00000003 excluded=0.99995553 optional=0.00002942 required=0.00001501
+excluded O=0.00000001 excluded=0.99970373 optional=0.00028604 required=0.00001022
+excluded O=0.00000007 excluded=0.99969006 optional=0.00020787 required=0.000102
+excluded O=0.00000061 excluded=0.99553672 optional=0.00382237 required=0.0006403
+excluded O=0.00000045 excluded=0.99579433 optional=0.00372971 required=0.0004755
+excluded O=0.00000318 excluded=0.98997607 optional=0.00981059 required=0.00021016
+excluded O=0.00000092 excluded=0.99907865 optional=0.0005066 required=0.00041383
+excluded O=0.00000023 excluded=0.99776028 optional=0.00169769 required=0.00054181
+excluded O=0.00000002 excluded=0.999396 optional=0.00058323 required=0.00002075
+excluded O=0.00000002 excluded=0.99972243 optional=0.00026572 required=0.00001183
+excluded O=0.00000002 excluded=0.99972623 optional=0.00026206 required=0.00001168
+excluded O=0.00000001 excluded=0.99983995 optional=0.00015635 required=0.0000037
+excluded O=0.00000017 excluded=0.99897952 optional=0.00101477 required=0.00000554
+excluded O=0.00000134 excluded=0.98784568 optional=0.01156598 required=0.000587
+excluded O=0.00000001 excluded=0.99988097 optional=0.00010241 required=0.00001662
+excluded O=0.00000005 excluded=0.99990339 optional=0.00008664 required=0.00000992
+excluded O=0.00000005 excluded=0.9999713 optional=0.00001187 required=0.00001678
+excluded O=0.00000005 excluded=0.99997437 optional=0.00001346 required=0.00001213
+excluded O=0.00000004 excluded=0.99996952 optional=0.00001351 required=0.00001693
+excluded O=0.00000037 excluded=0.99842744 optional=0.00122899 required=0.0003432
+excluded O=0.00000074 excluded=0.99603868 optional=0.00354297 required=0.00041761
+excluded O=0.00000074 excluded=0.99512976 optional=0.00444368 required=0.00042582
+excluded O=0.00000066 excluded=0.99313501 optional=0.0053926 required=0.00147174
+excluded O=0.00000083 excluded=0.98997537 optional=0.00938425 required=0.00063954
+excluded O=0.00000141 excluded=0.98917111 optional=0.01051238 required=0.00031509
+excluded O=0.00000045 excluded=0.99447842 optional=0.00515653 required=0.0003646
+excluded O=0.00000243 excluded=0.94656928 optional=0.05302025 required=0.00040804
+excluded O=0.00000004 excluded=0.99952687 optional=0.00044209 required=0.000031
+excluded O=0.00000002 excluded=0.99972333 optional=0.00026476 required=0.00001188
+excluded O=0.00000001 excluded=0.99971208 optional=0.00027684 required=0.00001107
+excluded O=0.00000006 excluded=0.99978131 optional=0.00021603 required=0.00000261
+excluded O=0.00000019 excluded=0.99992884 optional=0.00004308 required=0.00002789
+excluded O=0.00000157 excluded=0.98928778 optional=0.00985612 required=0.00085453
+excluded O=0.00000007 excluded=0.99987328 optional=0.00008465 required=0.000042
+excluded O=0.00000002 excluded=0.99996779 optional=0.00001746 required=0.00001473
+excluded O=0.00000001 excluded=0.99971754 optional=0.00027136 required=0.00001109
+excluded O=0.00000001 excluded=0.99990406 optional=0.00008725 required=0.00000868
+excluded O=0.00000003 excluded=0.99944672 optional=0.00052701 required=0.00002624
+excluded O=0.00000073 excluded=0.99872623 optional=0.00108937 required=0.00018366
+excluded O=0.00000053 excluded=0.9961606 optional=0.00380372 required=0.00003515
+excluded O=0.00000025 excluded=0.99818414 optional=0.00143537 required=0.00038024
+excluded O=0.00000048 excluded=0.98779328 optional=0.01173497 required=0.00047127
+excluded O=0.00000001 excluded=0.9989704 optional=0.00099759 required=0.000032
+excluded O=0.00000002 excluded=0.99982359 optional=0.00016698 required=0.00000942
+excluded O=0.00000001 excluded=0.99971628 optional=0.00027271 required=0.000011
+excluded O=0.00000001 excluded=0.99990617 optional=0.00009148 required=0.00000234
+excluded O=0.00000001 excluded=0.9998567 optional=0.0001248 required=0.00001849
+excluded O=0.0000002 excluded=0.99905093 optional=0.00091275 required=0.00003612
+excluded O=0.00000058 excluded=0.98484442 optional=0.01443191 required=0.0007231
+excluded O=0.00000001 excluded=0.99895121 optional=0.00101591 required=0.00003286
+excluded O=0.00000001 excluded=0.99981704 optional=0.00017409 required=0.00000886
+excluded O=0.00000004 excluded=0.99989103 optional=0.00010202 required=0.0000069
+excluded O=0.00000008 excluded=0.99997507 optional=0.00001336 required=0.00001149
+excluded O=0.00000006 excluded=0.99989878 optional=0.00001743 required=0.00008373
+excluded O=0.00000054 excluded=0.99622145 optional=0.00353875 required=0.00023926
+excluded O=0.00000069 excluded=0.99526659 optional=0.00426023 required=0.00047249
+excluded O=0.00000157 excluded=0.99037627 optional=0.00885571 required=0.00076645
+excluded O=0.0000009 excluded=0.98447649 optional=0.01471262 required=0.00080999
+excluded O=0.00000431 excluded=0.98450943 optional=0.01527052 required=0.00021574
+excluded O=0.0000003 excluded=0.9992049 optional=0.00041155 required=0.00038325
+excluded O=0.0000004 excluded=0.99344024 optional=0.00620848 required=0.00035088
+excluded O=0.00000001 excluded=0.99893884 optional=0.00103722 required=0.00002393
+excluded O=0.00000001 excluded=0.99984769 optional=0.00014438 required=0.00000793
+excluded O=0.00000001 excluded=0.99986641 optional=0.00012346 required=0.00001012
+excluded O=0.00000002 excluded=0.99983475 optional=0.00015605 required=0.00000918
+excluded O=0.00000001 excluded=0.99982133 optional=0.00016559 required=0.00001306
+excluded O=0.0000002 excluded=0.99905415 optional=0.00090619 required=0.00003946
+excluded O=0.00000037 excluded=0.98609762 optional=0.01291226 required=0.00098976
+excluded O=0.00000009 excluded=0.99929337 optional=0.00065574 required=0.0000508
+excluded O=0.00000001 excluded=0.99997022 optional=0.00001342 required=0.00001635
+excluded O=0.00000006 excluded=0.99956807 optional=0.00040942 required=0.00002245
+excluded O=0.00000006 excluded=0.99992435 optional=0.00002909 required=0.00004651
+excluded O=0.00000216 excluded=0.99563881 optional=0.00355779 required=0.00080124
+excluded O=0.00000062 excluded=0.99683962 optional=0.00126064 required=0.00189912
+excluded O=0.00000935 excluded=0.98794672 optional=0.00968385 required=0.00236008
+excluded O=0.00000083 excluded=0.99378605 optional=0.00302086 required=0.00319226
+excluded O=0.00000215 excluded=0.9792415 optional=0.0181251 required=0.00263125
+excluded O=0.00000107 excluded=0.97822474 optional=0.01880173 required=0.00297246
+excluded O=0.00000214 excluded=0.97089748 optional=0.0267525 required=0.00234788
+excluded O=0.00000106 excluded=0.99022439 optional=0.00701143 required=0.00276312
+excluded O=0.0000022 excluded=0.9887447 optional=0.00851702 required=0.00273608
+excluded O=0.00000114 excluded=0.97970458 optional=0.01716673 required=0.00312755
+excluded O=0.00000933 excluded=0.95800564 optional=0.04005442 required=0.00193061
+excluded O=0.00000058 excluded=0.99205896 optional=0.00706278 required=0.00087767
+excluded O=0.00000123 excluded=0.99586326 optional=0.00383178 required=0.00030373
+excluded O=0.00000014 excluded=0.99893288 optional=0.00060174 required=0.00046524
+excluded O=0.00000001 excluded=0.99949638 optional=0.0004862 required=0.00001741
+excluded O=0.00000001 excluded=0.99985543 optional=0.00013671 required=0.00000784
+excluded O=0.00000001 excluded=0.99991154 optional=0.00007939 required=0.00000906
+excluded O=0.00000001 excluded=0.99935874 optional=0.00062423 required=0.00001701
+excluded O=0.00000001 excluded=0.99985296 optional=0.00013919 required=0.00000785
+excluded O=0.00000001 excluded=0.9998594 optional=0.00013281 required=0.00000778
+excluded O=0.00000001 excluded=0.99986648 optional=0.00012339 required=0.00001012
+excluded O=0.00000001 excluded=0.99982787 optional=0.00016345 required=0.00000867
+excluded O=0.00000002 excluded=0.99986419 optional=0.00012755 required=0.00000825
+excluded O=0.00000002 excluded=0.99972546 optional=0.00026247 required=0.00001205
+excluded O=0.00000005 excluded=0.99959533 optional=0.00034296 required=0.00006167
+excluded O=0.00000009 excluded=0.9941629 optional=0.00510299 required=0.00073402
+excluded O=0.00000001 excluded=0.99878887 optional=0.00117433 required=0.00003679
+excluded O=0.00000001 excluded=0.99981392 optional=0.00017714 required=0.00000893
+excluded O=0.00000001 excluded=0.99982536 optional=0.00016647 required=0.00000816
+excluded O=0.00000001 excluded=0.99980575 optional=0.00017956 required=0.00001467
+excluded O=0.00000001 excluded=0.99998479 optional=0.00001033 required=0.00000487
+excluded O=0.00000003 excluded=0.99994346 optional=0.00002926 required=0.00002726
+excluded O=0.00000021 excluded=0.99311383 optional=0.00656046 required=0.00032549
+excluded O=0.00000002 excluded=0.99878557 optional=0.00117927 required=0.00003513
+excluded O=0.00000001 excluded=0.99959338 optional=0.00039466 required=0.00001195
+excluded O=0.00000005 excluded=0.99990098 optional=0.00008908 required=0.00000988
+excluded O=0.00000005 excluded=0.99997122 optional=0.0000119 required=0.00001682
+excluded O=0.00000001 excluded=0.99996896 optional=0.00001759 required=0.00001344
+excluded O=0.00000001 excluded=0.99986078 optional=0.0001314 required=0.0000078
+excluded O=0.00000001 excluded=0.99985939 optional=0.00013283 required=0.00000776
+excluded O=0.00000001 excluded=0.99985938 optional=0.00013285 required=0.00000776
+excluded O=0.00000001 excluded=0.99985945 optional=0.00013278 required=0.00000776
+excluded O=0.00000002 excluded=0.99986458 optional=0.00012716 required=0.00000824
+excluded O=0.00000002 excluded=0.99972717 optional=0.00026108 required=0.00001173
+excluded O=0.00000006 excluded=0.99980441 optional=0.00018065 required=0.00001488
+excluded O=0.00000007 excluded=0.99991242 optional=0.00002647 required=0.00006103
+excluded O=0.00000106 excluded=0.99233264 optional=0.00731129 required=0.00035501
+excluded O=0.00000001 excluded=0.99985857 optional=0.00011163 required=0.00002979
+excluded O=0.00000001 excluded=0.99985948 optional=0.00013256 required=0.00000795
+excluded O=0.00000001 excluded=0.99986699 optional=0.00012286 required=0.00001013
+excluded O=0.00000005 excluded=0.99988165 optional=0.00010702 required=0.00001128
+excluded O=0.00000005 excluded=0.99994826 optional=0.00001404 required=0.00003766
+excluded O=0.00000013 excluded=0.99664366 optional=0.00276246 required=0.00059375
+excluded O=0.00000002 excluded=0.99945 optional=0.00053763 required=0.00001236
+excluded O=0.00000001 excluded=0.99969595 optional=0.00029425 required=0.00000979
+excluded O=0.00000003 excluded=0.9995607 optional=0.00042195 required=0.00001732
+excluded O=0.00000002 excluded=0.99974711 optional=0.00023949 required=0.00001338
+excluded O=0.00000001 excluded=0.99957076 optional=0.00041238 required=0.00001684
+excluded O=0.00000001 excluded=0.99985627 optional=0.00013587 required=0.00000784
+excluded O=0.00000005 excluded=0.99990302 optional=0.00008712 required=0.00000981
+excluded O=0.00000001 excluded=0.99996828 optional=0.00001807 required=0.00001364
+excluded O=0.00000006 excluded=0.99987778 optional=0.00008889 required=0.00003327
+excluded O=0.0000001 excluded=0.99778334 optional=0.00182608 required=0.00039047
+excluded O=0.00000001 excluded=0.9999516 optional=0.00003782 required=0.00001057
+excluded O=0 excluded=0.99997129 optional=0.00002261 required=0.00000609
+excluded O=0.00000001 excluded=0.99986081 optional=0.00013143 required=0.00000775
+excluded O=0.00000001 excluded=0.99985946 optional=0.00013276 required=0.00000776
+excluded O=0.00000002 excluded=0.99986453 optional=0.00012721 required=0.00000824
+excluded O=0.00000001 excluded=0.9997156 optional=0.00027332 required=0.00001107
+excluded O=0.00000002 excluded=0.99986318 optional=0.00012856 required=0.00000824
+excluded O=0.00000001 excluded=0.99980947 optional=0.00018034 required=0.00001017
+excluded O=0.00000019 excluded=0.999005 optional=0.0009336 required=0.0000612
+excluded O=0.00000444 excluded=0.95742556 optional=0.04229111 required=0.00027889
+excluded O=0.00000004 excluded=0.99993015 optional=0.00003882 required=0.00003099
+excluded O=0.00000005 excluded=0.99983749 optional=0.00014631 required=0.00001614
+excluded O=0.00000012 excluded=0.99842635 optional=0.00152748 required=0.00004606
+excluded O=0.00000009 excluded=0.99884751 optional=0.00093336 required=0.00021904
+excluded O=0.00000005 excluded=0.99961193 optional=0.00037349 required=0.00001453
+excluded O=0.00000001 excluded=0.99998168 optional=0.00001238 required=0.00000592
+excluded O=0.00000001 excluded=0.99986794 optional=0.00012195 required=0.0000101
+excluded O=0.00000001 excluded=0.9998278 optional=0.00016352 required=0.00000867
+excluded O=0.00000001 excluded=0.99985897 optional=0.00013325 required=0.00000777
+excluded O=0.00000001 excluded=0.99985948 optional=0.00013273 required=0.00000778
+excluded O=0.00000001 excluded=0.9998671 optional=0.00012277 required=0.00001012
+excluded O=0.00000001 excluded=0.99989319 optional=0.00009672 required=0.00001009
+excluded O=0.00000001 excluded=0.99958308 optional=0.00040164 required=0.00001527
+excluded O=0.00000002 excluded=0.99949041 optional=0.00049328 required=0.00001628
+excluded O=0.00000001 excluded=0.99971762 optional=0.0002677 required=0.00001467
+excluded O=0.00000004 excluded=0.99927106 optional=0.00072022 required=0.00000868
+excluded O=0.000001 excluded=0.98686011 optional=0.01071551 required=0.00242337
+excluded O=0.00000091 excluded=0.96968436 optional=0.02824258 required=0.00207215
+excluded O=0.00000044 excluded=0.99738874 optional=0.00219295 required=0.00041787
+excluded O=0.00000059 excluded=0.98662915 optional=0.01294728 required=0.00042298
+excluded O=0.00000254 excluded=0.96453122 optional=0.01957373 required=0.01589251
+excluded O=0.00000544 excluded=0.93344677 optional=0.06073129 required=0.0058165
+excluded O=0.0000004 excluded=0.99900608 optional=0.00052325 required=0.00047027
+excluded O=0.00000043 excluded=0.99343481 optional=0.00517654 required=0.00138822
+excluded O=0.00000301 excluded=0.95870741 optional=0.02824041 required=0.01304917
+excluded O=0.00000239 excluded=0.96870384 optional=0.02450798 required=0.00678579
+excluded O=0.00001885 excluded=0.96955381 optional=0.02842514 required=0.00200219
+excluded O=0.00000264 excluded=0.96851184 optional=0.02742042 required=0.0040651
+excluded O=0.0000008 excluded=0.99455205 optional=0.00407732 required=0.00136983
+excluded O=0.0000009 excluded=0.92559979 optional=0.07127658 required=0.00312273
+excluded O=0.00000014 excluded=0.93355465 optional=0.06237598 required=0.00406924
+required O=0.00000139 excluded=0.44548667 optional=0.00857021 required=0.54594173
+required O=0.00000062 excluded=0.27086885 optional=0.01446699 required=0.71466354
+required O=0.00000063 excluded=0.13861568 optional=0.00069165 required=0.86069203
+required O=0.0000038 excluded=0.11973272 optional=0.0001239 required=0.88013958
+required O=0.00000202 excluded=0.10101572 optional=0.04023631 required=0.85874594
+required O=0.00000009 excluded=0.07206707 optional=0.00018492 required=0.92774793
+required O=0.00000011 excluded=0.06968289 optional=0.00037628 required=0.92994072
+required O=0.00000064 excluded=0.06906335 optional=0.00061926 required=0.93031676
+required O=0.00000026 excluded=0.00016483 optional=0.00044422 required=0.99939069
+required O=0.00000263 excluded=0.11766183 optional=0.00744148 required=0.87489406
+required O=0.00000068 excluded=0.13983265 optional=0.01345486 required=0.84671181
+required O=0.00000003 excluded=0.13113902 optional=0.00098905 required=0.86787189
+required O=0.00000002 excluded=0.12833438 optional=0.00028023 required=0.87138537
+required O=0.00000184 excluded=0.1256921 optional=0.00032658 required=0.87397948
+excluded O=0.00001242 excluded=0.72955722 optional=0.11276801 required=0.15766235
+excluded O=0.00000342 excluded=0.96364757 optional=0.00559819 required=0.03075082
+excluded O=0.00000042 excluded=0.99211656 optional=0.00258978 required=0.00529324
+excluded O=0.00000029 excluded=0.99659428 optional=0.00284674 required=0.00055869
+excluded O=0.00000166 excluded=0.99445257 optional=0.00498109 required=0.00056468
+excluded O=0.00000148 excluded=0.99055918 optional=0.00810608 required=0.00133325
+excluded O=0.00000082 excluded=0.99330662 optional=0.00564115 required=0.00105141
+excluded O=0.00000046 excluded=0.98807339 optional=0.01149139 required=0.00043476
+excluded O=0.0000017 excluded=0.93896502 optional=0.06033706 required=0.00069622
+excluded O=0.00000179 excluded=0.98099192 optional=0.01828192 required=0.00072437
+excluded O=0.00000358 excluded=0.98605816 optional=0.01207327 required=0.00186499
+excluded O=0.00000184 excluded=0.98573859 optional=0.01351048 required=0.00074909
+excluded O=0.00000323 excluded=0.98264523 optional=0.0153591 required=0.00199244
+excluded O=0.00000074 excluded=0.98837278 optional=0.0106744 required=0.00095208
+excluded O=0.00000059 excluded=0.98792926 optional=0.01125696 required=0.00081319
+excluded O=0.00000013 excluded=0.99860314 optional=0.00117979 required=0.00021693
+excluded O=0.00000016 excluded=0.99849368 optional=0.00130014 required=0.00020602
+excluded O=0.00000027 excluded=0.99856959 optional=0.00121959 required=0.00021054
+excluded O=0.00000063 excluded=0.99783045 optional=0.00189335 required=0.00027557
+excluded O=0.00000012 excluded=0.99970487 optional=0.0000794 required=0.00021561
+excluded O=0.00000015 excluded=0.99962711 optional=0.00011865 required=0.00025409
+excluded O=0.00000199 excluded=0.9938483 optional=0.00567481 required=0.00047491
+excluded O=0.00000024 excluded=0.99889783 optional=0.00049495 required=0.00060698
+excluded O=0.0000012 excluded=0.96841087 optional=0.00209091 required=0.02949702
+excluded O=0.00000614 excluded=0.98256983 optional=0.01033442 required=0.00708961
+excluded O=0.00000127 excluded=0.99510413 optional=0.00105574 required=0.00383885
+excluded O=0.00000083 excluded=0.99444776 optional=0.00420101 required=0.00135041
+excluded O=0.00000132 excluded=0.99916898 optional=0.00058486 required=0.00024484
+excluded O=0.00000067 excluded=0.99927305 optional=0.00015818 required=0.0005681
+excluded O=0.00000029 excluded=0.99950831 optional=0.00031934 required=0.00017206
+excluded O=0.00000566 excluded=0.99211165 optional=0.00621162 required=0.00167106
+excluded O=0.00000087 excluded=0.99841142 optional=0.00049268 required=0.00109504
+excluded O=0.00000027 excluded=0.99605445 optional=0.00377954 required=0.00016574
+excluded O=0.00000041 excluded=0.99802515 optional=0.00182218 required=0.00015226
+excluded O=0.00000035 excluded=0.99962635 optional=0.0001791 required=0.0001942
+excluded O=0.00000043 excluded=0.99793106 optional=0.00184923 required=0.00021929
+excluded O=0.00000084 excluded=0.99524578 optional=0.00381628 required=0.0009371
+excluded O=0.00000176 excluded=0.99030502 optional=0.00931947 required=0.00037375
+excluded O=0.00000033 excluded=0.99307975 optional=0.00675474 required=0.00016519
+excluded O=0.00000119 excluded=0.99685464 optional=0.00253491 required=0.00060926
+excluded O=0.00000027 excluded=0.99762909 optional=0.0017967 required=0.00057394
+excluded O=0.00000044 excluded=0.99627317 optional=0.00342621 required=0.00030017
+excluded O=0.00000045 excluded=0.99645575 optional=0.00314048 required=0.00040333
+excluded O=0.00000003 excluded=0.99939955 optional=0.00058389 required=0.00001654
+excluded O=0 excluded=0.99992046 optional=0.0000784 required=0.00000114
+excluded O=0.00000001 excluded=0.99943658 optional=0.00056319 required=0.00000022
+excluded O=0 excluded=0.99994971 optional=0.00004521 required=0.00000508
+excluded O=0.00000003 excluded=0.99987497 optional=0.00010076 required=0.00002424
+excluded O=0.00000001 excluded=0.99997102 optional=0.00002267 required=0.00000631
+excluded O=0 excluded=0.99968459 optional=0.00030949 required=0.00000591
+excluded O=0 excluded=0.99996789 optional=0.00003033 required=0.00000178
+excluded O=0.00000001 excluded=0.9998802 optional=0.0001178 required=0.000002
+excluded O=0 excluded=0.99998513 optional=0.00001458 required=0.00000029
+excluded O=0.00000002 excluded=0.99868087 optional=0.00131783 required=0.00000128
+excluded O=0.00000001 excluded=0.99974484 optional=0.00019649 required=0.00005865
+excluded O=0.00000002 excluded=0.99403064 optional=0.00595254 required=0.00001681
+excluded O=0.00000388 excluded=0.99524637 optional=0.00439259 required=0.00035716
+excluded O=0.00000052 excluded=0.99941469 optional=0.00005369 required=0.0005311
+excluded O=0.00000045 excluded=0.99806783 optional=0.00174249 required=0.00018923
+excluded O=0.00009925 excluded=0.98833063 optional=0.01143671 required=0.00013341
